@@ -196,15 +196,15 @@ footer{
     </p>
 
     <p>
-        Recuerda de siempre poner tu propio nombre anónimo y, sobre todo,¡pásatelo bien!
+        Recuerda de siempre poner tu propio nombre anónimo y, sobre todo,¡pásatelo bien! (AVISO: TODO ES FICTICIO Y SI ALGO SE ASEMEJA NA LA REALIDAD ES CASUALIDAD)
     </p>
 </div>
 
 <div class="articulo">
-    <h2>Último rumor del día: Ñañi se MATA a PAJAS?!!</h2>
+    <h2>Último rumor del día: Ñañi se COPIA en los EXÁMENES?!!</h2>
 
     <p>
-        "Hoy hemos visto unos compañeros y yo al entrar el baño todas las paredes de blanco". Estas eran las palabras de Dario Hita, alumno de 1BACH C, que dice que el pasado viernes vió a Daniel Jiménez, de 1BACH A, dandose placer en el baño de estudiantes. 
+        "Hoy hemos visto unos compañeros y yo al entrar el baño todos sus brazos llenos de escrituras". Estas eran las palabras de Dario Hita, alumno de 1BACH C, que dice que el pasado viernes vió a Daniel Jiménez, de 1BACH A, dandose chuletas a si mismo en el baño de estudiantes. 
     </p>
 
     <p>
@@ -213,7 +213,7 @@ footer{
 </div>
 
 <div class="articulo">
-    <h2>MATEUS ACORREADO!!!</h2>
+    <h2>MATEUS ENOVIADO!!!</h2>
 
     <p>
         Nos acaban de informar que el compañero Mateuch de 1BACH A está salendo con 
@@ -221,57 +221,16 @@ footer{
     </p>
 
     <p>
-        También nos han dicho que Mateuch tiene una admiradora secreta de 4º ESO. Si a Mateuch le gustan menores(que sabemos que sí), se lo pasará pipa con esta noticia.
+        También nos han dicho que Mateuch tiene una admiradora secreta de 4º ESO, pero sin confirmacion de quien es.
     </p>
 </div>
 
-<div class="caja">
-    <h2>Chat Público</h2>
-
-    <div id="chat"></div>
-
-    <input
-        type="text"
-        id="nombre"
-        placeholder="Tu nombre">
-
-    <input
-        type="text"
-        id="mensaje"
-        placeholder="Escribe tu mensaje">
-
-    <button onclick="enviarMensaje()">
-        Enviar al chat
-    </button>
-</div>
 
 </main>
 
 <aside>
 
-<div class="caja">
-    <h3>Buzón Privado</h3>
 
-    <p>
-        Envía un mensaje privado al administrador.
-    </p>
-
-    <input
-        type="text"
-        id="privadoNombre"
-        placeholder="Tu nombre">
-
-    <textarea
-        id="privadoMensaje"
-        rows="6"
-        placeholder="Escribe tu mensaje privado"></textarea>
-
-    <button onclick="enviarPrivado()">
-        Enviar mensaje
-    </button>
-
-    <div id="confirmacion"></div>
-</div>
 
 <div class="caja">
     <h3>Normas</h3>
@@ -294,60 +253,6 @@ footer{
 
 </div>
 
-<script>
-
-function enviarMensaje(){
-
-    let nombre =
-    document.getElementById("nombre").value;
-
-    let mensaje =
-    document.getElementById("mensaje").value;
-
-    if(nombre === "" || mensaje === ""){
-        alert("Completa todos los campos.");
-        return;
-    }
-
-    let chat =
-    document.getElementById("chat");
-
-    let nuevo =
-    document.createElement("div");
-
-    nuevo.className = "mensaje";
-
-    nuevo.innerHTML =
-    "<b>" + nombre + ":</b> " + mensaje;
-
-    chat.appendChild(nuevo);
-
-    chat.scrollTop = chat.scrollHeight;
-
-    document.getElementById("mensaje").value = "";
-}
-
-function enviarPrivado(){
-
-    let nombre =
-    document.getElementById("privadoNombre").value;
-
-    let mensaje =
-    document.getElementById("privadoMensaje").value;
-
-    if(nombre === "" || mensaje === ""){
-        alert("Completa todos los campos.");
-        return;
-    }
-
-    document.getElementById("confirmacion").innerHTML =
-    "<p style='color:green'><b>Mensaje enviado correctamente.</b></p>";
-
-    document.getElementById("privadoNombre").value = "";
-    document.getElementById("privadoMensaje").value = "";
-}
-
-</script>
 
 </body>
 </html>
